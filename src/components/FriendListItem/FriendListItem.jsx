@@ -1,6 +1,6 @@
-import css from './Friend.module.css';
+import css from './FriendListItem.module.css';
 
-export const Friend = ({ id, avatar, name, isOnline }) => {
+export const FriendListItem = ({ id, avatar, name, isOnline }) => {
    let isonline = css.offline;
    if (isOnline === true) {isonline = css.online;}
    return (
