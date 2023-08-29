@@ -1,0 +1,14 @@
+import css from './App.module.css'
+import { Section } from 'components/Section/Section';
+
+export const App = () => {
+  return (
+    <main className={css.main}>
+      <h1 hidden>React homework 1</h1>
+      <Section title='Social media profile' />
+      <Section title='Statistics Section' />
+      <Section title='Friends list' />
+      <Section title='Transaction history' />
+    </main>
+  );
+};
