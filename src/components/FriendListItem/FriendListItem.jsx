@@ -1,11 +1,11 @@
-import css from './FriendListItem.module.css';
+import {Friend, Status, Avatar, Name} from './FriendListItem.styled.jsx';
 
 export const FriendListItem = ({ id, avatar, name, isOnline }) => {
    return (
-      <li key={id} className={css.item} >
-         <span className={`${css.status} ${isOnline === true ? (css.online) : (css.offline)}`}></span>
-         <img className={css.avatar} src={avatar} alt={name} width="48" />
-         <p className={css.name}>{name}</p>
-      </li>
+      <Friend key={id} >
+         <Status isonline={isOnline}></Status>
+         <Avatar src={avatar} alt={name} width="48" />
+         <Name>{name}</Name>
+      </Friend>
    )
 }

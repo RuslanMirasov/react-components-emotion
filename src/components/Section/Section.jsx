@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { SectionWrapper, Container, SectionTitle } from './Section.styled.js';
+import { SectionWrapper, Container, SectionTitle } from './Section.styled.jsx';
 
 export const Section = ({ title, children  }) => {
    return (

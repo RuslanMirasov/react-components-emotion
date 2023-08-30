@@ -1,4 +1,4 @@
-import { History } from './TransactionHistory.styled.js';
+import { History } from './TransactionHistory.styled.jsx';
 import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({ items }) => {
