@@ -1,4 +1,6 @@
-.friends {
+import styled from '@emotion/styled';
+
+export const Friends = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -7,4 +9,4 @@
   margin: 0 auto;
   width: 100%;
   max-width: 320px;
-}
+`;

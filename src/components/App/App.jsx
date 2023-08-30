@@ -1,4 +1,3 @@
-import css from './App.module.css';
 import friends from 'json/friends.json';
 import user from 'json/user.json';
 import data from 'json/data.json';
@@ -8,12 +7,13 @@ import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
+import { Main } from './App.styled.jsx';
 
 
 export const App = () => {
   return (
-    <main className={css.main}>
-      <h1 hidden>React homework 1</h1>
+    <Main>
+      <h1 hidden>React components (Emotion)</h1>
 
       <Section title='Social media profile'>
         <Profile
@@ -37,6 +37,6 @@ export const App = () => {
         <TransactionHistory items={transactions} />
       </Section>
       
-    </main>
+    </Main>
   );
 };
