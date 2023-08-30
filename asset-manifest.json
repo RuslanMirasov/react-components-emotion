@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-components-emotion/static/css/main.0df9e278.css",
+    "main.js": "/react-components-emotion/static/js/main.cf39b652.js",
+    "index.html": "/react-components-emotion/index.html",
+    "main.0df9e278.css.map": "/react-components-emotion/static/css/main.0df9e278.css.map",
+    "main.cf39b652.js.map": "/react-components-emotion/static/js/main.cf39b652.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0df9e278.css",
+    "static/js/main.cf39b652.js"
+  ]
+}
