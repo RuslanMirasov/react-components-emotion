@@ -15,33 +15,27 @@ export const App = () => {
     <main className={css.main}>
       <h1 hidden>React homework 1</h1>
 
-      <Section
-        title='Social media profile'
-        content={
-          <Profile
-            username={user.username}
-            tag={user.tag}
-            location={user.location}
-            avatar={user.avatar}
-            stats={user.stats}
-          />
-        }
-      />
+      <Section title='Social media profile'>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+      </Section>
+        
+      <Section title='Statistics Section'>
+        <Statistics title='Upload stats' stats={data} />
+      </Section>
 
-      <Section
-        title='Statistics Section'
-        content={ <Statistics title='Upload stats' stats={data} /> }
-      />
+      <Section title='Friends list'>
+        <FriendList friends={friends} />
+      </Section>
 
-      <Section
-        title='Friends list'
-        content={ <FriendList friends={friends} /> }
-      />
-
-      <Section
-        title='Transaction history'
-        content={ <TransactionHistory items={transactions} /> }
-      />
+      <Section title='Transaction history'>
+        <TransactionHistory items={transactions} />
+      </Section>
       
     </main>
   );
